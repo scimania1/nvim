@@ -1,0 +1,58 @@
+return {
+  "mhartington/formatter.nvim",
+  -- event = { "BufReadPre", "BufNewFile" },
+  -- dependencies = {
+  --   "williamboman/mason-lspconfig.nvim",
+  --   "williamboman/mason.nvim",
+  -- },
+  -- keys = {
+  --   { "<leader>f", "<cmd>FormatWrite<CR>", desc = "format the current file" }
+  -- },
+  -- -- opts = {
+  -- --   filetype = {
+  -- --     c = {
+  -- --       require("formatter.filetypes.c").clangformat,
+  -- --       {
+  -- --         exe = "clang-format",
+  -- --         args = {
+  -- --           "-style={IndentWidth: 4, PointerAlignment: Left}"
+  -- --         }
+  -- --       }
+  -- --     },
+  -- --     cpp = {
+  -- --       require("formatter.filetypes.cpp").clangformat,
+  -- --       {
+  -- --         exe = "clang-format",
+  -- --         args = {
+  -- --           "-style={IndentWidth: 4, PointerAlignment: Left}"
+  -- --         }
+  -- --       }
+  -- --     },
+  -- --   }
+  -- -- },
+  -- config = function(_, _)
+  --   local opts = {
+  --     filetype = {
+  --       c = {
+  --         require("formatter.filetypes.c").clangformat,
+  --         {
+  --           exe = "clang-format",
+  --           args = {
+  --             "-style={IndentWidth: 4, PointerAlignment: Left}"
+  --           }
+  --         }
+  --       },
+  --       cpp = {
+  --         require("formatter.filetypes.cpp").clangformat,
+  --         {
+  --           exe = "clang-format",
+  --           args = {
+  --             "-style={IndentWidth: 4, PointerAlignment: Left}"
+  --           }
+  --         }
+  --       },
+  --     }
+  --   }
+  --   require("formatter").setup(opts)
+  -- end
+}
