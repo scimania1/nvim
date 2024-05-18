@@ -68,8 +68,3 @@ map({ "n", "v" }, "<leader>d", [["_d]])
 map("n", "<leader>f", function()
   vim.lsp.buf.format({ timeout_ms = 2000 })
 end)
-
--- open netrw
-map("n", "<Tab>", "<cmd>Ex<CR>")
--- TODO
-vim.g.netrw_banner = 0
