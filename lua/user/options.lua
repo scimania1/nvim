@@ -33,6 +33,7 @@ vim.opt.signcolumn = "yes"
 vim.opt.smartcase = true
 vim.opt.smartindent = true
 vim.opt.softtabstop = 4
+vim.opt.spelllang = { "en" }
 vim.opt.splitbelow = true
 vim.opt.splitbelow = true
 vim.opt.splitkeep = "screen"
