@@ -23,7 +23,7 @@ map("n", "<C-l>", "<C-W>l")
 
 -- window resizing
 map("n", "<M-,>", "<C-W>5<")
-map("n", "<M-,>", "<C-W>5>")
+map("n", "<M-.>", "<C-W>5>")
 map("n", "<M-t>", "<C-W>+")
 map("n", "<M-s>", "<C-W>-")
 
