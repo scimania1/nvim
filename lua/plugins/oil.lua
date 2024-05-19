@@ -18,5 +18,5 @@ return {
             require("oil").setup(opts)
             vim.keymap.set("n", "<Tab>", "<cmd>Oil<cr>")
         end,
-    }
+    },
 }

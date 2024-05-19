@@ -13,5 +13,5 @@ return {
         keys = {
             { "<leader><leader>g", "<cmd>Git<cr>", desc = "Fugitive" },
         },
-    }
+    },
 }

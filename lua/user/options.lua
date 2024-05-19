@@ -15,7 +15,8 @@ vim.opt.fillchars = {
 vim.opt.formatoptions = "jtcqn"
 -- TODO: check if the program is installed by running checkhealth
 vim.opt.grepprg = "rg --vimgrep"
-vim.opt.guicursor = "n-v-c:block,i-ci-ve:block,r-cr:hor20,o:hor50,a:blinkwait700-blinkoff400-blinkon250,sm:block-blinkwait175-blinkoff150-blinkon175"
+vim.opt.guicursor =
+    "n-v-c:block,i-ci-ve:block,r-cr:hor20,o:hor50,a:blinkwait700-blinkoff400-blinkon250,sm:block-blinkwait175-blinkoff150-blinkon175"
 vim.opt.ignorecase = true
 vim.opt.inccommand = "split"
 vim.opt.laststatus = 3

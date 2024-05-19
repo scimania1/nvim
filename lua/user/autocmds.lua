@@ -8,7 +8,7 @@ vim.api.nvim_create_autocmd("TextYankPost", {
     pattern = "*",
     callback = function()
         vim.highlight.on_yank()
-    end
+    end,
 })
 
 -- spell and wrap in text files
@@ -18,5 +18,5 @@ vim.api.nvim_create_autocmd("FileType", {
     callback = function()
         vim.opt.wrap = true
         vim.opt.spell = true
-    end
+    end,
 })

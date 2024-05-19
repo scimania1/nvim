@@ -13,6 +13,6 @@ return {
         },
         config = function(_, opts)
             require("user.configs.completions")
-        end
+        end,
     },
 }
