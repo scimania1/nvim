@@ -7,9 +7,9 @@ return {
         dependencies = {
             {
                 "nvim-telescope/telescope-fzf-native.nvim",
-                build = have_make and "make"
+                build = has_make and "make"
                     or "cmake -S. -Bbuild -DCMAKE_BUILD_TYPE=Release && cmake --build build --config Release && cmake --install build --prefix build",
-                enabled = have_make or have_cmake,
+                enabled = has_make or has_cmake,
             },
             { "nvim-lua/plenary.nvim" }
         },
