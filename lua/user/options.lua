@@ -1,4 +1,4 @@
-vim.opt.completeopt = { "menu", "menuone", "noselect" }
+vim.opt.completeopt = { "menu", "menuone", "noinsert" }
 vim.opt.conceallevel = 2
 vim.opt.confirm = true
 vim.opt.cursorline = true
