@@ -24,16 +24,6 @@ return {
                     node_decremental = "grm",
                 },
             },
-        },
-        config = function(_, opts)
-            require("nvim-treesitter.install").update({ with_sync = true })
-            require("nvim-treesitter.configs").setup(opts)
-        end,
-    },
-    {
-        "nvim-treesitter/nvim-treesitter-textobjects",
-        dependencies = { "nvim-treesitter/nvim-treesitter" },
-        opts = {
             textobjects = {
                 select = {
                     enable = true,
@@ -70,7 +60,16 @@ return {
             },
         },
         config = function(_, opts)
+            require("nvim-treesitter.install").update({ with_sync = true })
             require("nvim-treesitter.configs").setup(opts)
-        end
+            vim.schedule(function()
+                require("lazy").load({ plugins = { "nvim-treesitter-textobjects" } })
+            end)
+        end,
+    },
+    {
+        "nvim-treesitter/nvim-treesitter-textobjects",
+        lazy = true,
+        dependencies = { "nvim-treesitter/nvim-treesitter" },
     }
 }
