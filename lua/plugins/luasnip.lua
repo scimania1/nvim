@@ -20,5 +20,11 @@ return {
             region_check_events = "InsertEnter",
             delete_check_events = { "TextChanged" },
         },
+        config = function(_, opts)
+            require("luasnip").setup(opts)
+            for _, file in ipairs(vim.api.nvim_get_runtime_file("lua/user/snippets/*.lua", true)) do
+                loadfile(file)()
+            end
+        end,
     },
 }
