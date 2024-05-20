@@ -44,7 +44,7 @@ return {
                 {
                     "<leader>/",
                     function()
-                        builtin.current_buffer_fuzzy_find(themes.get_dropdown({ previewer = false }))
+                        builtin.current_buffer_fuzzy_find(themes.get_dropdown())
                     end,
                 },
             }

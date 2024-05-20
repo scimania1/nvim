@@ -51,3 +51,4 @@ if vim.fn.has("nvim-0.10.0") then
 end
 
 vim.g.mapleader = " "
+vim.g.maplocalleader = " "
