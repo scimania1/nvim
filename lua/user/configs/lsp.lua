@@ -104,6 +104,10 @@ function M.lspconfig.setup()
         nmap("]d", vim.diagnostic.goto_next, "[N]ext [D]iagnostic")
         nmap("[d", vim.diagnostic.goto_prev, "[P]revious [D]iagnostic")
         nmap("<leader>q", vim.diagnostic.setloclist, "Open diagnostics list")
+        -- toggle inlay hints
+        nmap("<leader>it", function()
+            vim.lsp.inlay_hint.enable(not vim.lsp.inlay_hint.is_enabled())
+        end, "Inlay Hints Toggle")
 
         -- enable inlay hints
         -- if client.server_capabilities.inlayHintProvider then
