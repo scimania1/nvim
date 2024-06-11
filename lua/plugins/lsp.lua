@@ -36,10 +36,11 @@ return {
         "folke/trouble.nvim",
         cmd = "Trouble",
         dependencies = "nvim-tree/nvim-web-devicons",
+        opts = {},
         keys = {
             {
                 "<leader>wd",
-                "<cmd>TroubleToggle workspace_diagnostics<cr>",
+                "<cmd>Trouble diagnostics toggle<cr>",
                 desc = "shows diagnostics in trouble.nvim",
             },
         },
