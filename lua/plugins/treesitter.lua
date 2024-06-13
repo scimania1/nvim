@@ -37,7 +37,7 @@ return {
                     selection_modes = {
                         ["@parameter.outer"] = "v",
                         ["@function.outer"] = "V",
-                        ["@class.outer"] = "<c-v>",
+                        ["@class.outer"] = "V",
                     },
                     include_surrounding_whitespace = true,
                 },
