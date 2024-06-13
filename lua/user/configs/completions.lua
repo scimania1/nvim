@@ -44,11 +44,11 @@ cmp.setup({
             ellipsis_char = "...",
         }),
     },
-    experimental = {
-        ghost_text = {
-            hl_group = "LspCodeLens",
-        },
-    },
+    -- experimental = {
+    --     ghost_text = {
+    --         hl_group = "LspCodeLens",
+    --     },
+    -- },
     view = {
         entries = { name = "custom", selection_order = "near_cursor" },
     },
