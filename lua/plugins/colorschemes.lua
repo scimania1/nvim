@@ -29,4 +29,50 @@ return {
             vim.cmd([[colorscheme rose-pine]])
         end,
     },
+    {
+        "folke/tokyonight.nvim",
+        lazy = true,
+        opts = {
+            style = "night",
+            styles = {
+                comments = { italic = false },
+                keywords = { italic = false },
+            },
+            lualine_bold = true,
+            on_highlights = function(hl, c)
+                local prompt = "#2d3149"
+                hl.TelescopeNormal = {
+                    bg = c.bg_dark,
+                    fg = c.fg_dark,
+                }
+                hl.TelescopeBorder = {
+                    bg = c.bg_dark,
+                    fg = c.bg_dark,
+                }
+                hl.TelescopePromptNormal = {
+                    bg = prompt,
+                }
+                hl.TelescopePromptBorder = {
+                    bg = prompt,
+                    fg = prompt,
+                }
+                hl.TelescopePromptTitle = {
+                    bg = c.red,
+                    fg = c.bg_dark,
+                }
+                hl.TelescopePreviewTitle = {
+                    bg = c.green,
+                    fg = c.bg_dark,
+                }
+                hl.TelescopeResultsTitle = {
+                    bg = c.blue,
+                    fg = c.bg_dark,
+                }
+            end,
+        },
+        config = function(_, opts)
+            require("tokyonight").setup(opts)
+            vim.cmd([[colorscheme tokyonight]])
+        end,
+    },
 }
