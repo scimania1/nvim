@@ -129,14 +129,6 @@ function M.lspconfig.setup()
                 settings = opts.servers[server_name],
             })
         end,
-        ["clangd"] = function()
-            local clangd_capabilities = capabilities
-            capabilities.offsetEncoding = { "utf-8" }
-            require("lspconfig").clangd.setup({
-                capabilities = clangd_capabilities,
-                on_attach = on_attach,
-            })
-        end,
     })
 end
 

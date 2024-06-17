@@ -18,7 +18,7 @@ require("telescope").setup({
             preview_cutoff = 120,
         },
         file_ignore_patterns = { ".git/", "node_modules" },
-        path_display = { "filename_first" },
+        -- path_display = { "filename_first" },
         border = {},
         borderchars = { "─", "│", "─", "│", "╭", "╮", "╯", "╰" },
         color_devicons = true,
