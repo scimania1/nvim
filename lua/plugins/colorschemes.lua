@@ -2,7 +2,7 @@ return {
     {
         "rose-pine/neovim",
         name = "rose-pine",
-        lazy = false,
+        lazy = true,
         opts = {
             styles = {
                 bold = true,
@@ -31,7 +31,8 @@ return {
     },
     {
         "folke/tokyonight.nvim",
-        lazy = true,
+        lazy = false,
+        name = "tokyonight",
         opts = {
             style = "night",
             styles = {
