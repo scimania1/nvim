@@ -2,7 +2,7 @@ return {
     {
         "rose-pine/neovim",
         name = "rose-pine",
-        lazy = true,
+        lazy = false,
         opts = {
             styles = {
                 bold = true,
@@ -16,7 +16,7 @@ return {
                 TelescopeSelectionCaret = { fg = "love", bg = "highlight_med" },
                 TelescopeMultiSelection = { fg = "text", bg = "highlight_high" },
 
-                TelescopeTitle = { fg = "base", bg = "love" },
+                TelescopeTitle = { fg = "overlay", bg = "overlay" },
                 TelescopePromptTitle = { fg = "base", bg = "pine" },
                 TelescopePreviewTitle = { fg = "base", bg = "iris" },
 
@@ -31,7 +31,7 @@ return {
     },
     {
         "folke/tokyonight.nvim",
-        lazy = false,
+        lazy = true,
         name = "tokyonight",
         opts = {
             style = "night",
