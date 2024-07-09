@@ -35,7 +35,6 @@ vim.opt.smartindent = true
 vim.opt.softtabstop = 4
 vim.opt.spelllang = { "en" }
 vim.opt.splitbelow = true
-vim.opt.splitbelow = true
 vim.opt.splitkeep = "screen"
 vim.opt.splitright = true
 vim.opt.swapfile = false
